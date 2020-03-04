@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    text-align: center;
+}
+.container {
+    width: 100%;
+    height: 500px;
+    background-color: #cccccc;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+form {
+    width: 300px;
+}
+input {
+    width: 100%;
+    outline: none;
+    padding: 5px;
+    margin: 10px;
+}
+input:focus {
+    box-shadow: 0 0 4px rgba(65, 92, 212, 0.5);
+    width: 100%;
+    outline: none;
+}
+::placeholder {
+    opacity: 1;
+}
