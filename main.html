@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Attendance Tracker</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
-    Hello there.
-</body>
+    <body>
+        <section class="container">
+            <form action="contactform.php" method="GET">
+                <div class="Name">
+                    <header>Attendace Tracker</header>
+                </div>
+                <div class="item">
+                        <input type="text" name="Name" placeholder="Enter persons name here">
+                </div>
+                <div class="item">
+                    <input type="date" name="Date" placeholder="Todays date">
+                </div>
+                <div class="item">
+                    Present: <input type="radio" name="Attendance" value="Present" checked>
+                </div>
+                <div class="item">
+                    Tardy: <input type="radio" name="Attendance" value="Tardy">
+                </div>
+                <div class="item">
+                    Absent: <input type="radio" name="Attendance" value="Absent">
+                </div>
+                <div class="item">
+                    <button type="submit" name="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </body>
 </html>
